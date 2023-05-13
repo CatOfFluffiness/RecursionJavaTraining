@@ -1,12 +1,17 @@
 public class RecursionTutorial {
 
     public static void main(String[] args) {
-        SayHi();
+
+        SayHi(1);
+
     }
 
-    private static void SayHi(){
+    private static void SayHi(int count){
+
         System.out.println("Hi!");
 
-        SayHi();
+        if (count <=1) {return;}
+
+        SayHi(count - 1);
     }
 }
