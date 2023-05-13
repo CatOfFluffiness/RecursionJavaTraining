@@ -6,5 +6,7 @@ public class RecursionTutorial {
 
     private static void SayHi(){
         System.out.println("Hi!");
+
+        SayHi();
     }
 }
